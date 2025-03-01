@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "./", // Add this line to handle GitHub Pages deployment
+  base: "./", // This should be set to the subdirectory name if using project pages, or "./" for user/org pages
   plugins: [
     react(),
     mode === 'development' &&
